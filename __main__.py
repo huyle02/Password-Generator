@@ -1,3 +1,4 @@
+from functions import valid_password, replaceWithNumber, replaceWithSpecialNumber, replaceWithUpper, modify_password
 def password(pword_user):
     pwd, wcontinue = valid_password(pwd=pword_user, show_warning=True)
 
@@ -41,3 +42,6 @@ def password(pword_user):
         else:
             print("Invalid choice. Please try again.")
             return None
+if __name__ == "__main__":
+  pword_user = input('Enter your password: ')
+  password(pword_user)
